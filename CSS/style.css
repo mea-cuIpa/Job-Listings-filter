@@ -1,0 +1,183 @@
+/*
+0-600px: Phone
+600-900px: Tablet portrait
+900-1200px: Tablet landscape
+etc
+*/
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+@keyframes loadAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  line-height: 1.7; }
+
+.u-card-display-positioning {
+  display: flex;
+  margin: auto 0; }
+  @media (max-width: 56.25em) {
+    .u-card-display-positioning {
+      display: block; } }
+
+.u-column-positioning {
+  display: flex; }
+  @media (max-width: 56.25em) {
+    .u-column-positioning {
+      display: block; } }
+
+.u-content-side {
+  text-align: right; }
+  @media (max-width: 56.25em) {
+    .u-content-side {
+      text-align: left; } }
+
+.hidden {
+  display: none; }
+
+.u-hidden-hor-line {
+  display: none; }
+  @media (max-width: 56.25em) {
+    .u-hidden-hor-line {
+      display: block; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 65%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 60%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 55%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 67.5%; } }
+
+.btn {
+  margin: 0.3rem 0.3rem; }
+  .btn:link, .btn:visited {
+    font-size: 1.5rem;
+    color: #5ba4a4;
+    background-color: #eef6f6;
+    border: none;
+    font-weight: 700; }
+
+.content-card .btn:hover {
+  color: #fff;
+  background-color: #5ba4a4; }
+
+.filter-card__buttons .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: #fff;
+  background-color: #5ba4a4; }
+  .filter-card__buttons .btn:hover {
+    background-color: #000;
+    color: #fff; }
+
+.filter-card__buttons span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5ba4a4; }
+  .filter-card__buttons span:hover {
+    transition: 0.3s all;
+    cursor: pointer;
+    color: #000; }
+
+.filter-card__clear .btn:link, .filter-card__clear .btn:visited {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5); }
+
+.filter-card__clear .btn:hover {
+  color: #5ba4a4;
+  text-decoration: underline;
+  background-color: #fff; }
+
+.filter-card .card {
+  background-color: #fff;
+  padding: 0 4rem;
+  min-height: 8rem;
+  margin-top: 0.5rem; }
+
+.card {
+  box-shadow: 0 1rem 2rem rgba(91, 164, 164, 0.4); }
+
+.content-card .card {
+  padding: 2rem 4rem;
+  border: 0;
+  margin-top: calc(8rem / 2); }
+  @media (max-width: 56.25em) {
+    .content-card .card {
+      padding: 2.2rem 2rem;
+      margin-top: calc(8rem/ 1.4); }
+      .content-card .card img {
+        width: 5.5rem;
+        margin-top: -6.25rem; } }
+  .content-card .card:last-child {
+    margin-bottom: calc(8rem / 2); }
+  .content-card .card-featured {
+    border-left: 0.4rem solid #5ba4a4; }
+
+.content-card__text {
+  margin-bottom: 1rem; }
+  .content-card__text--title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #5ba4a4; }
+  .content-card__text--new, .content-card__text--featured {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .content-card__text--new {
+    margin-left: 0.5rem;
+    padding: 0.3rem;
+    background-color: #5ba4a4;
+    border-radius: 1rem;
+    color: #fff; }
+  .content-card__text--featured {
+    margin-left: 0.25rem;
+    padding: 0.3rem;
+    background-color: #000;
+    border-radius: 1rem;
+    color: #fff; }
+
+.content-card__role {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #000; }
+  .content-card__role:hover {
+    color: #5ba4a4; }
+
+.content-card__attributes {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem; }
+  .content-card__attributes span:not(:first-child) {
+    margin-left: 1rem; }
+
+.container-fluid {
+  background-image: url("../images/bg-header-desktop.svg");
+  background-size: cover;
+  background-color: #5ba4a4;
+  height: 18rem; }
+
+.row {
+  max-width: 144rem; }

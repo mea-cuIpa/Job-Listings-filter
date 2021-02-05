@@ -1,0 +1,36 @@
+.u-card-display-positioning {
+  display: flex;
+  margin: auto 0;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+}
+
+.u-column-positioning {
+  display: flex;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+}
+
+.u-content-side {
+  text-align: right;
+
+  @include respond(tab-port) {
+    text-align: left;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.u-hidden-hor-line {
+  display: none;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+}

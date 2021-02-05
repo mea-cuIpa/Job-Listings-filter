@@ -1,0 +1,62 @@
+.btn {
+  &:link,
+  &:visited {
+    font-size: $font-standart;
+    color: $color-primary;
+    background-color: $button-background;
+    border: none;
+    font-weight: $font-bold;
+  }
+  margin: 0.3rem 0.3rem;
+}
+
+.content-card {
+  .btn {
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+  }
+}
+
+.filter-card__buttons {
+  .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: $color-white;
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+
+  span {
+    font-size: $font-standart;
+    font-weight: $font-bold;
+    color: $color-primary;
+
+    &:hover {
+      transition: 0.3s all;
+      cursor: pointer;
+      color: $color-black;
+    }
+  }
+}
+
+.filter-card__clear {
+  .btn {
+    &:link,
+    &:visited {
+      font-weight: $font-avg;
+      color: rgba($color-black, 0.5);
+    }
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: underline;
+      background-color: $color-white;
+    }
+  }
+}

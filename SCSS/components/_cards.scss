@@ -1,0 +1,85 @@
+.filter-card {
+  .card {
+    background-color: $color-white;
+    padding: 0 4rem;
+    min-height: $height-card;
+    margin-top: 0.5rem;
+    @include respond(tab-port) {
+    }
+  }
+}
+
+.card {
+  box-shadow: 0 1rem 2rem rgba($color-primary, 0.4);
+}
+
+.content-card {
+  .card {
+    padding: 2rem 4rem;
+    border: 0;
+    margin-top: calc(#{$height-card} / 2);
+
+    @include respond(tab-port) {
+      padding: 2.2rem 2rem;
+      margin-top: calc(#{$height-card}/ 1.4);
+
+      img {
+        width: 5.5rem;
+        margin-top: -6.25rem;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: calc(#{$height-card} / 2);
+    }
+
+    &-featured {
+      border-left: 0.4rem solid $color-primary;
+    }
+  }
+
+  &__text {
+    margin-bottom: $card-bottom-margin;
+
+    &--title {
+      font-size: $font-standart;
+      font-weight: $font-avg;
+      color: $color-primary;
+    }
+
+    &--new,
+    &--featured {
+      font-size: $font-small;
+      text-transform: uppercase;
+      font-weight: $font-avg;
+    }
+
+    &--new {
+      @include featuredAndNew(0.5rem, $color-primary);
+    }
+
+    &--featured {
+      @include featuredAndNew(0.25rem, $color-black);
+    }
+  }
+
+  &__role {
+    font-size: $font-big;
+    margin-bottom: $card-bottom-margin;
+    font-weight: $font-bold;
+    color: $color-black;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__attributes {
+    color: rgba($color-black, 0.5);
+    font-size: $font-standart;
+
+    span:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+}

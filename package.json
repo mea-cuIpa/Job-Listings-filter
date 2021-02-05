@@ -1,0 +1,22 @@
+{
+  "name": "job-filtering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass SCSS/main.scss CSS/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mea-cuIpa/Job-Listings-Filtering.git"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mea-cuIpa/Job-Listings-Filtering/issues"
+  },
+  "homepage": "https://github.com/mea-cuIpa/Job-Listings-Filtering#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
