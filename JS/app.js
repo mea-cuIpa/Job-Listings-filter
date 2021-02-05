@@ -213,13 +213,13 @@ const loadData = arrayValue => {
                 tools =>
                   `<a href="#" class="btn" data-value="${tools}">${tools}</a>`
               )
-              .join('')}
+              .join(' ')}
             ${val.languages
               .map(
                 languages =>
                   `<a href="#" class="btn" data-value="${languages}">${languages}</a>`
               )
-              .join('')}
+              .join(' ')}
           </div>
         </div>
       </div>`;
